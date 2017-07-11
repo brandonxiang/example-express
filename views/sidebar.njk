@@ -1,4 +1,7 @@
 <ul class="sidebar">
-  <li>标题一</li>
-  <li>标题二</li>
+  {% for s  in sidebar %}
+  <li>
+    <a href="/{{s.id}}">{{s.title}}</a>
+  </li>
+  {% endfor %}
 </ul>
