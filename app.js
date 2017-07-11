@@ -16,7 +16,8 @@ var app = express();
 // app.set('views', path.join(__dirname, 'views'));
 nunjucks.configure(path.join(__dirname, 'views'), { // 设置模板文件的目录，为views
   autoescape: true,
-  express: app
+  express: app,
+  noCache: true,
 });
 app.set('view engine', 'njk');
 

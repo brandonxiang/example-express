@@ -1,6 +1,8 @@
 {% extends "layout.njk" %}
 
+
+
 {% block content %}
-  <h1>{{title}}</h1>
-  <p>Welcome to {{title}}</p>
+  {% include "sidebar.njk" %}
+  {% include "content.njk" %}
 {% endblock %}
