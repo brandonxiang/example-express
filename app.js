@@ -18,7 +18,7 @@ nunjucks.configure(path.join(__dirname, 'views'), { // 设置模板文件的目�
   autoescape: true,
   express: app
 });
-app.set('view engine', 'html');
+app.set('view engine', 'njk');
 
 // uncomment after placing your favicon in /public
 //app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
