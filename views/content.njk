@@ -2,6 +2,13 @@
   <h1>{{title}}</h1>
   <p>Welcome to {{title}}</p>
   <script>
-    require(['javascripts/page{{title}}.js'])
+    require.config({
+      paths:{
+        'jquery':['https://cdn.bootcss.com/jquery/1.9.1/jquery', 'lib/jquery.191.js'],
+        'page':'javascripts/page{{title}}'
+      }
+    })
+    require(['jquery', 'page'], function(){
+    })
   </script>
   </div>

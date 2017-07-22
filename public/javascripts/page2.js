@@ -1,6 +1,6 @@
 define(function(){
     function fun1(){
-      alert("2");
+      console.log("2");
     }
 
     fun1();
